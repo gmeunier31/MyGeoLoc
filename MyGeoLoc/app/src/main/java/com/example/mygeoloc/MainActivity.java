@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements LocationListener, View.OnC
     String latitude, longitude;
     String provider;
     Mission currentMission = new Mission(0,0,0,0,0,0);
-    ArrayList<SavedMission> h = new ArrayList<SavedMission>();
+    ArrayList<Mission> h = new ArrayList<Mission>();
     Driver driver = new Driver("Meunier","Toinou",10000,1000, h);
     private Timer timer;
     private Integer almostLocked=0;
@@ -85,9 +85,9 @@ public class MainActivity extends Activity implements LocationListener, View.OnC
                 @Override
                 public void run() {
                     currentMission.currentDurationInSec++;
-                    Integer hours = currentMission.currentDurationInSec / 3600;
-                    Integer minutes = (currentMission.currentDurationInSec % 3600) / 60;
-                    Integer seconds = currentMission.currentDurationInSec % 60;
+                    int hours = currentMission.currentDurationInSec / 3600;
+                    int minutes = (currentMission.currentDurationInSec % 3600) / 60;
+                    int seconds = currentMission.currentDurationInSec % 60;
                     if (hours == 0 && minutes == 0)
                         tvTime.setText("Elapsed time : " + seconds + "s");
                     else if (hours == 0 && minutes > 0)

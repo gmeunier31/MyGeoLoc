@@ -11,10 +11,10 @@ public class Driver implements Parcelable {
     private String surname;
     private float totalDistanceDriverInMeter;
     private int totalTimeDriverInSec;
-    private ArrayList<SavedMission> historic = new ArrayList<SavedMission>();
+    private ArrayList<Mission> historic = new ArrayList<Mission>();
     private static final String TAG = "Driver";
 
-    public Driver (String n, String s, int td, int tt, ArrayList<SavedMission> h){
+    public Driver (String n, String s, int td, int tt, ArrayList<Mission> h){
         this.name=n;
         this.surname=s;
         this.totalDistanceDriverInMeter=td;
@@ -36,7 +36,7 @@ public class Driver implements Parcelable {
     public void setTotalTimeDriverInSec(int tt){
         this.totalTimeDriverInSec=tt;
     }
-    public void addMission(SavedMission sv){
+    public void addMission(Mission sv){
         this.historic.add(sv);
     }
 
@@ -53,7 +53,7 @@ public class Driver implements Parcelable {
     public int getTotalTimeDriverInSec(){
         return this.totalTimeDriverInSec;
     }
-    public SavedMission getSavedMissionFromIndex(int index){
+    public Mission getSavedMissionFromIndex(int index){
         if (index<0 || index>this.historic.size()){
             Log.e(TAG, "wrong index");
             return null;
@@ -86,8 +86,8 @@ public class Driver implements Parcelable {
         this.surname = source.readString();
         this.totalDistanceDriverInMeter = source.readFloat();
         this.totalTimeDriverInSec = source.readInt();
-        this.historic = new ArrayList<SavedMission>();
-        source.readList(this.historic, SavedMission.class.getClassLoader());
+        this.historic = new ArrayList<Mission>();
+        source.readList(this.historic, Mission.class.getClassLoader());
     }
 
     protected Driver(Parcel in) {
@@ -95,8 +95,8 @@ public class Driver implements Parcelable {
         this.surname = in.readString();
         this.totalDistanceDriverInMeter = in.readFloat();
         this.totalTimeDriverInSec = in.readInt();
-        this.historic = new ArrayList<SavedMission>();
-        in.readList(this.historic, SavedMission.class.getClassLoader());
+        this.historic = new ArrayList<Mission>();
+        in.readList(this.historic, Mission.class.getClassLoader());
     }
 
     public static final Parcelable.Creator<Driver> CREATOR = new Parcelable.Creator<Driver>() {
