@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="GPS_LOCK_THRESHOLD_DISTANCE">1</integer>
+    <integer name="GPS_LOCK_SAMPLES">3</integer>
+</resources>

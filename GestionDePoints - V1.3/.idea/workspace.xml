@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48524daa-981e-4fc7-adb2-c4ac3bf45854" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1rQeK18o9BAi7yxCTr3iD1ISlV0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/GestionDePoints-V1.3" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48524daa-981e-4fc7-adb2-c4ac3bf45854" name="Default Changelist" comment="" />
+      <created>1618912672385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618912672385</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="272" key="FileChooserDialogImpl" timestamp="1618921217341">
+      <screen x="1920" y="-12" width="1920" height="1040" />
+    </state>
+    <state x="740" y="284" key="FileChooserDialogImpl/1920.-12.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618912928043" />
+    <state x="2660" y="272" key="FileChooserDialogImpl/1920.-12.1920.1040/0.0.1920.1040@1920.-12.1920.1040" timestamp="1618921217341" />
+    <state x="2553" y="235" width="658" height="592" key="NewModule_or_Project.wizard" timestamp="1618921237941">
+      <screen x="1920" y="-12" width="1920" height="1040" />
+    </state>
+    <state x="633" y="247" width="658" height="592" key="NewModule_or_Project.wizard/1920.-12.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618912955231" />
+    <state x="2553" y="235" key="NewModule_or_Project.wizard/1920.-12.1920.1040/0.0.1920.1040@1920.-12.1920.1040" timestamp="1618921237941" />
+  </component>
+</project>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backMonaco"
+    tools:context=".ManualMissionActivity">
+
+    <!-- Screen main title -->
+    <TextView
+        android:id="@+id/tv_titleManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:fontFamily="@font/monaco"
+        android:textColor="@color/whiteMonaco"
+        android:textStyle="bold"
+        android:text="ENTER NEW MISSION" />
+
+
+    <!-- To show the distance entered with TableLayoutDistance-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="200"
+            android:gravity="right"
+            android:textColor="@color/greyMonaco"
+            android:textSize="24sp"
+            android:text="Distance: "/>
+        <TextView
+            android:id="@+id/tv_distanceManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textColor="@color/whiteMonaco"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="00,0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="right"
+            android:paddingRight="22dp"
+            android:textColor="@color/greyMonaco"
+            android:textSize="22sp"
+            android:text="km" />
+    </LinearLayout>
+
+    <!-- To enter the distance -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="19"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bt_oneManualDistance"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:text="1"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/bt_twoManualDistance"
+                android:text="2"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_threeManualDistance"
+                android:text="3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/monaco"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_fourManualDistance"
+                android:text="4"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:fontFamily="@font/monaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_fiveManualDistance"
+                android:text="5"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:fontFamily="@font/monaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_sixManualDistance"
+                android:text="6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_sevenManualDistance"
+                android:text="7"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:fontFamily="@font/monaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_heightManualDistance"
+                android:text="8"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:fontFamily="@font/monaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_nineManualDistance"
+                android:text="9"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:fontFamily="@font/monaco"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_zeroManualDistance"
+                android:text="0"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:textColor="@color/backMonaco"
+                android:fontFamily="@font/monaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_separatorManualDistance"
+                android:text=","
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_clearManualDistance"
+                android:text="CLEAR"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/monaco"
+                android:backgroundTint="@color/redMonaco"
+                android:textColor="@color/whiteMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- to enter the date of the mission -->
+    <TextView
+        android:id="@+id/ed_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:inputType="none"
+        android:textColorHint="@color/whiteMonaco"
+        android:hint="Enter date of the new mission"
+        android:textColor="@color/whiteMonaco"
+        android:paddingBottom="16dp"
+        />
+
+    <!-- To show the duration entered with TableLayoutDuration-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="right"
+            android:textColor="@color/greyMonaco"
+            android:textSize="24sp"
+            android:text="Duration: "/>
+        <TextView
+            android:id="@+id/tv_durationHrManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textColor="@color/whiteMonaco"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textColor="@color/greyMonaco"
+            android:textSize="24sp"
+            android:text="h" />
+        <TextView
+            android:id="@+id/tv_durationMnManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="2dp"
+            android:gravity="right"
+            android:textColor="@color/whiteMonaco"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="right"
+            android:paddingRight="24sp"
+            android:textColor="@color/greyMonaco"
+            android:textSize="22sp"
+            android:text="mn" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <!-- To enter the duration of the mission -->
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="20"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow>
+            <Button
+                android:id="@+id/bt_oneManualTime"
+                android:text="1"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_twoManualTime"
+                android:text="2"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_threeManualTime"
+                android:text="3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_fourManualTime"
+                android:text="4"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_fiveManualTime"
+                android:text="5"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_sixManualTime"
+                android:text="6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_sevenManualTime"
+                android:text="7"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_heightManualTime"
+                android:text="8"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_nineManualTime"
+                android:text="9"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_zeroManualTime"
+                android:text="0"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_HourMinutesManualTime"
+                android:text="Hours"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/whiteMonaco"
+                android:fontFamily="@font/monaco"
+                android:textColor="@color/backMonaco"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/bt_clearManualTime"
+                android:text="CLEAR"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/monaco"
+                android:backgroundTint="@color/redMonaco"
+                android:textColor="@color/whiteMonaco"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- To save the mission and close the screen -->
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/monaco"
+        android:textColor="@color/backMonaco"
+        android:backgroundTint="@color/whiteMonaco"
+        android:text="Validate"
+        android:textStyle="bold"
+        />
+</LinearLayout>

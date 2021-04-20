@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "147776574354",
+    "project_id": "mygeoloc-9edd2",
+    "storage_bucket": "mygeoloc-9edd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147776574354:android:c340cd9e5e8086fbf8274b",
+        "android_client_info": {
+          "package_name": "com.example.mygeoloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147776574354-2c1eo925acb1fcn3eqv9civccgrj0259.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhcJx_jFWwIdWrjqk5FEveRnWWunvr7a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147776574354-2c1eo925acb1fcn3eqv9civccgrj0259.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

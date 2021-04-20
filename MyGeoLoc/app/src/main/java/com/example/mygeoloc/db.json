@@ -1,0 +1,32 @@
+{
+  "Family" : "Meunier",
+  "Driver": [
+    {
+      "name": "Meunier",
+      "surname": "Antoine",
+      "totalDistanceInMeter": 44300,
+      "totalTimeInSec": 6600,
+      "missions": [
+        {
+          "name": "Domicile Lycée",
+          "date": "",
+          "distanceInMeter": 4300,
+          "durationInSec": 600,
+          "difficulties": [
+              "Traffic",
+              "City"
+          ]
+        },
+        {
+          "name": "Domicile Kart",
+          "date": "",
+          "distanceInMeter": 40000,
+          "durationInSec": 6000,
+          "difficulties": [
+            "Highway"
+          ]
+        }
+      ]
+    }
+  ]
+}

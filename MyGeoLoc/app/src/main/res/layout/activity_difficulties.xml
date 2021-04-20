@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="*"
+    android:background="@color/backMonaco">
+
+    <TableRow
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+        <TextView
+            android:id="@+id/tv_titleDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:gravity="center_horizontal"
+            android:text="Select difficulties"
+            android:textColor= "@color/whiteMonaco"
+            android:textSize="12sp"
+            android:fontFamily="@font/monaco"/>
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageParking"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_column="0"
+            android:padding="15dp"
+            android:src="@drawable/parking" />
+        <ImageView
+            android:id="@+id/imageParkingSlot"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:padding="15dp"
+
+            android:src="@drawable/parkingslot" />
+        <ImageView
+            android:id="@+id/imagePente"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:padding="15dp"
+            android:src="@drawable/road" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="32dp">
+        <CheckBox
+            android:id="@+id/cb_parking"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+        <CheckBox
+            android:id="@+id/cb_parkingSlot"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+        <CheckBox
+            android:id="@+id/cb_pente"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageWarning"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_column="0"
+            android:padding="15dp"
+            android:src="@drawable/warning" />
+        <ImageView
+            android:id="@+id/imageHighway"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:padding="15dp"
+            android:src="@drawable/highway" />
+        <ImageView
+            android:id="@+id/imageCity"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:padding="15dp"
+            android:src="@drawable/city" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="32dp">
+        <CheckBox
+            android:id="@+id/cb_traffic"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+        <CheckBox
+            android:id="@+id/cb_highway"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+        <CheckBox
+            android:id="@+id/cb_city"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageNational"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_column="0"
+            android:padding="15dp"
+            android:src="@drawable/forest" />
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:textSize="22sp"
+            android:text="SAVE"
+            android:fontFamily="@font/monaco"
+            android:textColor="@color/backMonaco"
+            android:backgroundTint="@color/whiteMonaco"
+            />
+    </TableRow>
+
+    <TableRow android:paddingBottom="32dp">
+        <CheckBox
+            android:id="@+id/cb_national"
+            android:buttonTint="@color/whiteMonaco"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center" />
+
+    </TableRow>
+
+</TableLayout>
